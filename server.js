@@ -5,6 +5,12 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articles = {
+    articleOne = {},
+    articleTwo = {},
+    articleThree = {} 
+};
+
 var articleOne =  {
     title: "Article One | Sherin James",
     heading:"Article One",
