@@ -20,14 +20,16 @@ var articles = {
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
             </p>`
 },
-   'article-two' : { title: "Article Two | Sherin James",
+    'article-two' : {
+    title: "Article Two | Sherin James",
     heading:"Article Two",
     date: "Sep 10 2016",
     content:`
             <p>
                 This is the content for my second article
             </p>`},
-    'article-three' : { title: "Article Three | Sherin James",
+    'article-three' : {
+    title: "Article Three | Sherin James",
     heading:"Article Three",
     date: "Sep 30 2016",
     content:`
@@ -84,7 +86,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-    var articleName = req.params.articleNames;
+    
+    var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
 
