@@ -20,6 +20,6 @@ button.onclick = function () {
   };
  
  // Make a request to the counter endpoint
- request.open('GET','http://http://sherinjames.imad.hasura-app.io/counter',true);
+ request.open('GET','http://sherinjames.imad.hasura-app.io/counter',true);
  request.send(null);
 };
